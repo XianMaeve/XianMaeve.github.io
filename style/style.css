@@ -51,7 +51,7 @@ nav button {
 #aboutme {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 #aboutme img {
@@ -64,6 +64,7 @@ nav button {
 }
 
 .projects {
+  margin: 5vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 10px;
@@ -76,4 +77,8 @@ nav button {
 #projects img {
   height: auto;
   width: 20pc;
+}
+
+footer {
+  text-align: center;
 }
