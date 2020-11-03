@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<script src="style\style.css"></script>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XianMaeve's Personal Page</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="headerbar">
+        <h1>XianMaeve's Project Portfolio</h1>
+        <nav id="navbar">
+          <button class="showButton">Navigation Menu</button>
+          <nav id="navDrop" class="drop-content">
+            <button><a href="#aboutme">About Me</a></button>
+            <button><a href="projects.html">Projects</a></button>
+            <!--This is going to link to blog posts built using th/spring jpa-->
+            <button class="construction"><a>Blog</a></button>
+          </nav>  
+        </nav>
+      </div>
+      <div class="content">
+
+        <div class="slideshow-container">
+
+          <div class="slides-nav">
+
+          <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+
+          <div class="slides fade">
+            <div class="number-text">1</div>
+            <img src="assets/catcode.png">
+            <div class="text">Code for the virtual pet</div>
+          </div>
+
+          <div class="slides fade">
+            <div class="number-text">2</div>
+            <img src="assets/catapp.png">
+            <div class="text">The virtual pet in motion</div>
+          </div>
+
+          <div class="slides fade">
+            <div class="number-text">3</div>
+            <img src="assets/sheltercode.png">
+            <div class="text">Code for the virtual pet shelter</div>
+          </div>
+
+          <div class="slides fade">
+            <div class="number-text">4</div>
+            <img src="assets/shelterapp.png">
+            <div class="text">The virtual pet shelter in motion</div>
+          </div>
+
+          <div class="slides fade">
+            <div class="number-text">5</div>
+            <img src="assets/reviewcode.png">
+            <div class="text">Code for the review site</div>
+          </div>
+
+          <div class="slides fade">
+            <div class="number-text">6</div>
+            <img src="assets/reviewapp.png">
+            <div class="text">The review site in motion</div>
+          </div>
+
+          <a class="next" onclick="plusSlides(1)">&#10095</a>
+
+          </div>
+
+          <div class="nav-dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+          </div>
+          
+        </div>
+
+
+
+        <section id="projects">
+          <h2>Projects</h2>
+          <div class="projects">
+            <div class="item">
+              <button id="pet-button"><h3>Virtual Pet</h3></button>
+              <article id="virtual-pet" class="collapsible-content">
+                <p>A simple little tamagotchi-like console game</p>
+                <img src="assets\catapp.png" alt="output screenshot" />
+                <img src="assets\catcode.png" alt="code screenshot" />
+                <h5>Skills Used</h5>
+                  <ul>
+                    <li>Basic java programming</li>
+                    <li>Java classes and methods</li>
+                    <li>Dry humour</li>
+                  </ul>
+              </article>
+            </div>
+            <div class="item">
+              <button  id="shelter-button"><h3>Virtual Pet Shelter</h3></button>
+              <article id="pet-shelter" class="collapsible-content">
+                <p>
+                A slightly less simple tamagotchi-like console game, with
+                multiple pets
+                </p>
+                <img src="assets\shelterapp.png" alt="output screenshot" />
+                <img src="assets\sheltercode.png" alt="code screenshot" />
+                <h5>Skills Used</h5>
+                <ul>
+                  <li>Basic java programming</li>
+                  <li>java classes and methods</li>
+                  <li>Java collections</li>
+                  <li>Last-minute desparation</li>
+                </ul>
+              </article>
+            </div>
+            <div class="item">
+              <button  id="review-button"><h3>Reviews Site</h3></button>
+              <article id="reviews" class="collapsible-content">
+                <p>
+                a basic blog-style reviews site using thymeleaf and spring JPA
+                to display content
+                </p>
+                <img src="assets\cat1.jpg" alt="output screenshot" />
+                <img src="assets\catbeard.png" alt="code screenshot" />
+                <h5>Skills Used</h5>
+                  <ul>
+                    <li>Basic java programming</li>
+                    <li>Java classes and methods</li>
+                    <li>Java collections</li>
+                    <li>h2 database interaction</li>
+                    <li>spring JPA</li>
+                    <li>thymeleaf framework</li>
+                    <li>html/css styling</li>
+                  </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer>copyright XianMaeve 2020</footer>
+    </div>
+    <script src="script/projects-script.js"></script>
+  </body>
+</html>

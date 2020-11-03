@@ -11,9 +11,14 @@
     <div class="container">
       <div class="headerbar">
         <h1>XianMaeve's Project Portfolio</h1>
-        <nav>
-          <button><a href="#aboutme">About Me</a></button>
-          <button><a href="#projects">Projects</a></button>
+        <nav id="navbar">
+          <button class="showButton">Navigation Menu</button>
+          <nav id="navDrop" class="drop-content">
+            <button><a href="#aboutme">About Me</a></button>
+            <button><a href="projects.html">Projects</a></button>
+            <!--This is going to link to blog posts built using th/spring jpa-->
+            <button id="construction"><a>Blog</a></button>
+          </nav>  
         </nav>
       </div>
       <div class="content">
@@ -30,79 +35,39 @@
             title="I've been told I look like a jessica so here's a picture of someone named jessica"
             alt="I've been told I look like a jessica so here's a picture of someone named jessica"
           />
-          <h3>Contact Info and Professional Pages</h3>
-          <ul>
-            <li>Once we learn to make email/contact forms one will go here.</li>
-            <!-- because no way in hell am I putting my contact info on a public web page... -->
-            <li>
-              <a href="https://www.linkedin.com/in/maeve-m-8335421b8/"
-                >LinkedIn</a
-              >
-            </li>
-            <!-- I don't use social media and am not incredibly comfortable making this... -->
-            <li><a href="https://github.com/XianMaeve">Github</a></li>
-          </ul>
-          <h3>Skills Profile</h3>
+          <section id="collapsibles">
+        <div id="skills">
+          <h3>> Skills Profile</h3>
+          <div id="skills-list">
           <ul>
             <li>Mazery</li>
             <li>Cooking</li>
             <li>Grappling</li>
             <li>Praxis</li>
           </ul>
-        </section>
-        <section id="projects">
-          <h2>Projects</h2>
-          <div class="projects">
-            <article>
-              <h3>Virtual Pet</h3>
-              <p>A simple little tamagotchi-like console game</p>
-              <img src="assets\catapp.png" alt="output screenshot" />
-              <img src="assets\catcode.png" alt="code screenshot" />
-              <h5>Skills Used</h5>
-              <ul>
-                <li>Basic java programming</li>
-                <li>Java classes and methods</li>
-                <li>Dry humour</li>
-              </ul>
-            </article>
-            <article>
-              <h3>Virtual Pet Shelter</h3>
-              <p>
-                A slightly less simple tamagotchi-like console game, with
-                multiple pets
-              </p>
-              <img src="assets\shelterapp.png" alt="output screenshot" />
-              <img src="assets\sheltercode.png" alt="code screenshot" />
-              <h5>Skills Used</h5>
-              <ul>
-                <li>Basic java programming</li>
-                <li>java classes and methods</li>
-                <li>Java collections</li>
-                <li>Last-minute desparation</li>
-              </ul>
-            </article>
-            <article>
-              <h3>Virtual Pets Amok</h3>
-              <p>
-                An even less simple tamagotchi-like console game, with multiple
-                pets of different species and (no pics available yet so here's
-                some cat pics)
-              </p>
-              <img src="assets\cat1.jpg" alt="output screenshot" />
-              <img src="assets\catbeard.png" alt="code screenshot" />
-              <h5>Skills Used</h5>
-              <ul>
-                <li>Basic java programming</li>
-                <li>Java classes and methods</li>
-                <li>Java collections</li>
-                <li>Abstract classes and interfaces</li>
-                <li>Looooots of painkillers</li>
-              </ul>
-            </article>
           </div>
+        </div>
+        </section>
+        <button id="modal-open">Contact me!</button>
         </section>
       </div>
+
+    <div id="modal-backdrop">
+      <div id="modal" class="contacts">
+          <p>
+            Connect with me on
+            <a href="https://www.linkedin.com/in/maeve-m-8335421b8/"
+              >LinkedIn</a>
+            Or message me on
+            <a href="https://github.com/XianMaeve"
+            >Github</a>
+          </p>
+          <button id="close-modal">Close</button>
+      </div>
+    </div>
+
       <footer>copyright XianMaeve 2020</footer>
     </div>
+    <script src="script/script.js"></script>
   </body>
 </html>

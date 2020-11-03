@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${reviewModel.title}">A review</title>
+</head>
+<body>
+
+<header>
+    <h1 th:text="${reviewModel.title}">A review</h1>
+</header>
+
+<main>
+    <ul>
+        <p><a href="/reviews">Reviews</a></p>
+        <li th:text="${reviewModel.title}"></li>
+        <li><img th:src="${reviewModel.imageUrl}"></img></li>
+    </ul>
+    <h2 th:text="${reviewModel.reviewContent}"></h2>
+</main>
+
+<footer>
+    <small>&copy <span th:text="${reviewModel.reviewDate}"></span> XianMaeve</small>
+</footer>
+
+</body>
+</html>
